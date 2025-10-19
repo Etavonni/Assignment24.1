@@ -50,7 +50,7 @@ What methods are you using to answer the question?
 #### Results
 What did your research find?
 
-After creating and evaluating all the models, we find that SVC performs the best with an accuracy score of 0.5513. Decision Trees are the second best model with an accuracy score of 0.5256 and a precision better than SVC. Both these accuracies beat the baseline and are better than random chance (50%). Hence this satisfies the project end goal.
+After creating and evaluating all the models, we find that SVC performs the best with an accuracy score of 0.5513. Decision Trees are the second best model with an accuracy score of 0.5256 and a precision better than SVC. Both these models beat the baseline and are better than random chance (50%). Hence this satisfies the project end goal.
 
 |Model|Accuracy|Precision|Recall|F1-Score|
 |-----|--------|---------|------|--------|
