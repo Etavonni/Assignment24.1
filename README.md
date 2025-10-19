@@ -35,21 +35,30 @@ What methods are you using to answer the question?
 
 3. Modeling: We will use the following models:
 
-    3A. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
+    3A. A simple model, like Logistic Regression, will be used as a baseline for performance comparison.
 
-    3B. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
+    3B. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
 
-    3C. A Long Short-Term Memory (LSTM) neural network will be the primary model used for prediction. LSTMs are a type of recurrent neural network (RNN) well-suited for time-series forecasting because they can effectively learn long-term dependencies in sequential data.
+    3C. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
 
-    3D. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
+    3D. Decision Trees : Decision Trees are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
+
+    3E. A Long Short-Term Memory (LSTM) neural network will be the primary model used for prediction. LSTMs are a type of recurrent neural network (RNN) well-suited for time-series forecasting because they can effectively learn long-term dependencies in sequential data.
 
 4. Model Evaluation: The model's performance will be evaluated based on its ability to classify the next day's movement. Key metrics will include Accuracy, Precision, Recall, and the F1-Score. A confusion matrix will also be generated to visualize the model's performance on a held-out test dataset.
-
 
 #### Results
 What did your research find?
 
 After creating and evaluating all the models, we find that SVC performs the best with an accuracy score of 0.5513. Decision Trees are the second best model with an accuracy score of 0.5256 and a precision better than SVC. Both these accuracies beat the baseline and are better than random chance (50%). Hence this satisfies the project end goal.
+
+|Model|Accuracy|Precision|Recall|F1-Score|
+|-----|--------|---------|------|--------|
+|LogisticRegression|0.47|0.50|0.47|0.45|
+|GradientBoosting|0.46|0.49|0.46|0.44|
+|SVC|0.55|0.52|0.55|0.50|
+|DecisionTree|0.53|0.55|0.53|0.52|
+|LSTM|0.46|0.53|0.46|0.40|
 
 #### Next steps
 What suggestions do you have for next steps?
@@ -60,5 +69,6 @@ Next steps could be to refine the data and the models further and experiment wit
 
 https://github.com/Etavonni/Assignment24.1
 
-
 ##### Contact and Further Information
+
+Author can be contacted at roydipankar@gmail.com
